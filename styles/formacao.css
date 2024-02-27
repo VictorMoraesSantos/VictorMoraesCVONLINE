@@ -1,0 +1,79 @@
+/* Estilização geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Estilização do menu de navegação */
+.menu {
+    padding: 20px 20px;
+    background-color: #bded7e;
+}
+
+.lista {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lista li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.lista a {
+    color: black;
+    text-decoration: none;
+}
+
+.lista a:hover {
+    transition: all 0.5s forwards;
+    color: grey;
+}
+
+/* Estilização do conteudo */
+.container-background {
+    padding: 100px 0px;
+    min-height: 100vh;
+    background-color: #e6e6e6;
+}
+
+.contant-container {
+    margin: 50px 100px;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* Estilização do texto */
+.text-container {
+    width: 500px;
+}
+
+.text-container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-container p {
+    margin-bottom: 80px;
+    font-size: 16px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/contato.css" />
+        <title>Victor Moraes</title>
+    </head>
+    <body>
+        <!-- Navegação do site -->
+        <nav class="menu">
+            <ul class="lista">
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-background">
+            <!-- Div que centraliza o centeúdo -->
+            <div class="contant-container">
+                <h1>Formulário de Contato</h1>
+
+                <!-- Formulário -->
+                <form action="processar_formulario.php" method="POST">
+                    <!-- Nome -->
+                    <label for="nome">Nome:</label><br />
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    /><br /><br />
+
+                    <!-- E-mail -->
+                    <label for="email">E-mail:</label><br />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    /><br /><br />
+
+                    <!-- Telefone -->
+                    <label for="telefone">Telefone:</label><br />
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        required
+                    /><br /><br />
+
+                    <!-- Mensagem -->
+                    <label for="conteudo">Mensagem:</label><br />
+                    <textarea
+                        id="conteudo"
+                        name="conteudo"
+                        rows="4"
+                        required
+                    ></textarea
+                    ><br /><br />
+
+                    <!-- Botão de enviar -->
+                    <input id="button" type="submit" value="Enviar" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
